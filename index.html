@@ -228,7 +228,7 @@ height:50vh;
     
     
     <!-- 文章页  -->
-            
+    
     <div class="site-intro-placeholder"></div>
     <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
     <div class="site-intro-meta">
@@ -254,6 +254,7 @@ height:50vh;
         
     </div>
 </div>
+
         <script>
  
   // get user agent
@@ -352,6 +353,38 @@ height:50vh;
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
             <main class="main index-page">
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2019/06/22/在vue中使用swiper组件的一点问题/">
+            
+                <span>在vue中使用swiper组件的一点问题</span>
+        </a>
+        <div class="abstract-content">
+            最近公司项目中用到了swiper组件，项目用的vue搭建的，其实一开始是打算自己写的，但是考虑到项目工程其他地方已经引过swiper，为了不重复造轮子，打算用swiper来做；
+需求场景很简单，大致就是这样一个页面结构
+
+顶部通知栏轮播用的swiper，通过接口拉到的数据来上下滚动轮播
+下方有一个手机号的表单提交
+结果问题就出在这里
+当我输手机号的时候，页面会特别卡，每输入一个数字都会很卡，数字进入input都会有延迟
+后来用Chrome的调试工具找了很久，发现问题出在swiper上，
+
+由于我的swiper组件和下面的内容使写在一个页面组件里的,每次我在input里输入一个字符时，都会...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/06/22</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
     
     
     
@@ -586,9 +619,16 @@ More...
     
     
     
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 2
+        Total : 3
         </div>
         <!-- search  -->
         
@@ -598,6 +638,20 @@ More...
     
     
     
+    
+    <div class="archive-year"> 2019 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/22</span><a class="archive-post-title" href="/2019/06/22/在vue中使用swiper组件的一点问题/">在vue中使用swiper组件的一点问题</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
     
     <div class="archive-year"> 2018 </div>
     <ul class="year-list">
