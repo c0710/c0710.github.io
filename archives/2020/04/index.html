@@ -347,48 +347,25 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href="/2018/08/27/new-art/">
+        <a class="abstract-title" href="/2020/04/15/JS异步编程中的回调与promise/">
             
-                <span>new art</span>
+                <span>JS异步编程中的回调与promise</span>
         </a>
         <div class="abstract-content">
             
-12345
+最近抽空复习了一下之前读过的JS书，看了一下关于回调函数和promise相关部分。
 
-1console.log(&quot;hello world!&quot;)
+回调函数提到异步编程，尽管发展到如今，js中解决异步的方式已经出现了很多种，Promise、async/await… 但不可否认，在这些出现之前，我们采用的最常规的方式就是回调函数，可以说，回调函数是js中最基础的异步模式。但尽管如此，回调还是存在着很多不可忽视的缺点。
 
+执行顺序 
+
+思考这样一段代码
+12345678fs.readFile(&apos;file.txt&apos;, &apos;utf-8&apos;, functino(data)&#123;    console.log(&ap...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/08/27</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/08/26/hello-world/">
-            
-                <span>Hello World</span>
-        </a>
-        <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/08/26</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/04/15</span>
             </div>
             <!-- tags  -->
             
